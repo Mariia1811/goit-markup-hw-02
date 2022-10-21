@@ -64,6 +64,9 @@ body {
 .page-nav-link:focus{
     color: var(--accent-color)
 }
+.current{
+color: var(--accent-color);
+}
 
 .contacts {
     font-weight: 500;
