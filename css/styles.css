@@ -4,7 +4,7 @@
    колір лого #000000;
    білий колір  #FFFFFF;
    колір в хедер для контактів з прозорістю: rgba(255, 255, 255, 0.6);
-   колір для кнопок: #F5F4FA;;
+   background-color footer:#2F303A;
 */
 
 :root {
@@ -13,7 +13,7 @@
     --accent-color: #2196F3;
     --white-color:#FFFFFF;
     --text-logo:#000000;
-    --color-btn:#F5F4FA;
+    --bcg-footer:#2F303A;
     --color-transparency:rgba(255, 255, 255, 0.6);
 }
 
@@ -48,7 +48,7 @@ body {
 }
 .logo:hover,
 .logo:focus{
-    text-shadow: 1px 1px 2px var(--text-color);
+    text-shadow: 1px 1px 2px var(--accent-color);
 }
 
 /* Page navigation */
@@ -77,32 +77,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Footer */
-
-.address {
-    font-style: normal;
-    line-height:1.71;
-    text-decoration: none;
-    background-color: var(--main-color-text); 
-}
-
-.map-link {
-    color:var(--white-color);
-}
-
-.link-mail,
-.link-phone{
-    color:var(--color-transparency);
-}
-
-.address:hover,
-.address:focus{
-    color: var(--accent-color);
-}
-
-
 /* Main page Studio */
-
 
 /* Hero */
 
@@ -113,7 +88,7 @@ body {
     line-height: 1.36; text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
-    background-color:var(--main-color-text);
+    background-color:var(--bcg-footer);
 }
 
 /* Button */
@@ -169,9 +144,7 @@ body {
     color:var(--text-color);
 }
 
-
 /* Main page Portfolio */
-
 
 .filter-btn {
     font-size: 16px;
@@ -202,4 +175,29 @@ body {
     font-size: 16px;
     line-height: 1.88;
     color:var(--text-color);
+}
+/* Footer */
+
+.footer{
+    background-color: var(--bcg-footer); 
+}
+
+.address {
+    font-style: normal;
+    line-height:1.71;
+    text-decoration: none;
+}
+.logo-white,
+.map-link {
+    color:var(--white-color);
+}
+
+.link-mail,
+.link-phone{
+    color:var(--color-transparency);
+}
+
+.address:hover,
+.address:focus{
+    color: var(--accent-color);
 }
